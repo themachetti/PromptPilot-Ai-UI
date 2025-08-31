@@ -123,8 +123,12 @@ const AppLayout = () => {
           {/* Logo */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-                <Bot className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-xl overflow-hidden bg-card p-1.5 shadow-md">
+                <img 
+                  src="/lovable-uploads/3f420088-d9e7-4b55-a36b-55a4bb2021b0.png" 
+                  alt="PromptPilot AI" 
+                  className="w-full h-full object-contain transition-all duration-300"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gradient">PromptPilot AI</h1>
