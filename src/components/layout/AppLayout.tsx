@@ -14,7 +14,8 @@ import {
   X,
   Sun,
   Moon,
-  Bell
+  Bell,
+  ArrowLeft
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -123,15 +124,15 @@ const AppLayout = () => {
           {/* Logo */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl overflow-hidden bg-card p-1.5 shadow-md">
+              <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
                 <img 
                   src="/lovable-uploads/3f420088-d9e7-4b55-a36b-55a4bb2021b0.png" 
                   alt="PromptPilot AI" 
-                  className="w-full h-full object-contain transition-all duration-300"
+                  className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gradient">PromptPilot AI</h1>
+                <h1 className="text-xl font-bold text-gradient drop-shadow-sm">PromptPilot AI</h1>
                 <p className="text-xs text-muted-foreground">Content Co-Pilot</p>
               </div>
             </div>
@@ -216,6 +217,18 @@ const AppLayout = () => {
               >
                 <Menu className="w-5 h-5" />
               </Button>
+              
+              {/* Back Button */}
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => window.history.back()}
+                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                <span className="hidden sm:inline">Back</span>
+              </Button>
+              
               <div>
                 <h2 className="text-xl font-semibold">
                   {navigationItems.find(item => item.path === location.pathname)?.name || "Dashboard"}
