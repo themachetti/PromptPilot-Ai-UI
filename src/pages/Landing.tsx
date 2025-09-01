@@ -61,9 +61,9 @@ const Landing = () => {
       <header className="border-b bg-card/50 backdrop-blur-xl sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-16 h-16 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-3 shadow-lg ring-1 ring-primary/10 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
               <img 
-                src="/lovable-uploads/promptpilot-logo.png" 
+                src="/lovable-uploads/3f420088-d9e7-4b55-a36b-55a4bb2021b0.png" 
                 alt="PromptPilot AI" 
                 className="w-full h-full object-contain drop-shadow-sm"
               />
@@ -76,7 +76,7 @@ const Landing = () => {
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
           </nav>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" onClick={() => window.location.href = '/app/dashboard'}>Sign In</Button>
+            <Button variant="ghost" size="sm">Sign In</Button>
             <Button className="btn-ai-primary" onClick={() => window.location.href = '/app/dashboard'}>
               Get Started <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -264,9 +264,9 @@ const Landing = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-2 shadow-lg ring-1 ring-primary/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
                   <img 
-                    src="/lovable-uploads/promptpilot-logo.png" 
+                    src="/lovable-uploads/3f420088-d9e7-4b55-a36b-55a4bb2021b0.png" 
                     alt="PromptPilot AI" 
                     className="w-full h-full object-contain drop-shadow-sm"
                   />
