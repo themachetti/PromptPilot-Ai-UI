@@ -21,6 +21,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { useToast } from "@/hooks/use-toast";
 
 const AppLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -34,6 +35,7 @@ const AppLayout = () => {
   
   const navigate = useNavigate();
   const location = useLocation();
+  const { toast } = useToast();
 
   const navigationItems = [
     { 
@@ -124,9 +126,9 @@ const AppLayout = () => {
           {/* Logo */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
+              <div className="w-14 h-14 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-3 shadow-lg ring-1 ring-primary/10 flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/3f420088-d9e7-4b55-a36b-55a4bb2021b0.png" 
+                  src="/lovable-uploads/promptpilot-logo.png" 
                   alt="PromptPilot AI" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
@@ -247,7 +249,17 @@ const AppLayout = () => {
                   <Moon className="w-5 h-5" />
                 )}
               </Button>
-              <Button variant="ghost" size="sm" className="relative">
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="relative"
+                onClick={() => {
+                  toast({
+                    title: "Notifications",
+                    description: "No new notifications at this time.",
+                  });
+                }}
+              >
                 <Bell className="w-5 h-5" />
                 <span className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
               </Button>
