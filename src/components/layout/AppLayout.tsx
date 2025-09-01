@@ -124,11 +124,11 @@ const AppLayout = () => {
           {/* Logo */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
+              <div className="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg ring-1 ring-primary/10">
                 <img 
-                  src="/lovable-uploads/3f420088-d9e7-4b55-a36b-55a4bb2021b0.png" 
+                  src="/lovable-uploads/daba77a7-fce2-46ec-88fd-082f343fcb5b.png" 
                   alt="PromptPilot AI" 
-                  className="w-full h-full object-contain drop-shadow-sm"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div>
