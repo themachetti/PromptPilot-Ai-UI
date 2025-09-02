@@ -108,7 +108,7 @@ const Pricing = () => {
       <header className="border-b bg-card/50 backdrop-blur-xl sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
+            <div className="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg ring-1 ring-primary/10">
               <img 
                 src="/lovable-uploads/daba77a7-fce2-46ec-88fd-082f343fcb5b.png" 
                 alt="PromptPilot AI" 
@@ -119,11 +119,11 @@ const Pricing = () => {
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
+            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
           </nav>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" onClick={() => window.location.href = '/app/dashboard'}>Sign In</Button>
+            <Button variant="ghost" size="sm" onClick={() => window.location.href = '/login'}>Sign In</Button>
             <Button className="btn-ai-primary" onClick={() => window.location.href = '/app/dashboard'}>
               Get Started <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -239,7 +239,7 @@ const Pricing = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-2 shadow-lg ring-1 ring-primary/10">
+                <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg ring-1 ring-primary/10">
                   <img 
                     src="/lovable-uploads/daba77a7-fce2-46ec-88fd-082f343fcb5b.png" 
                     alt="PromptPilot AI" 

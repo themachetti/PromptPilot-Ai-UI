@@ -14,6 +14,7 @@ import BrandVoice from "./pages/BrandVoice";
 import Settings from "./pages/Settings";
 import AppLayout from "./components/layout/AppLayout";
 import NotFound from "./pages/NotFound";
+import SignIn from "./pages/SignIn";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/login" element={<SignIn />} />
           <Route path="/app" element={<AppLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-image.jpg";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Landing = () => {
   const features = [
@@ -76,7 +77,8 @@ const Landing = () => {
             <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
           </nav>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm">Sign In</Button>
+            <ThemeToggle />
+            <Button variant="ghost" size="sm" onClick={() => (window.location.href = '/login')}>Sign In</Button>
             <Button className="btn-ai-primary" onClick={() => window.location.href = '/app/dashboard'}>
               Get Started <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
