@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Target, Zap, BarChart3, Calendar, Users, CheckCircle } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const About = () => {
   return (
@@ -24,6 +25,7 @@ const About = () => {
             <a href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
           </nav>
           <div className="flex items-center space-x-4">
+            <ThemeToggle />
             <Button variant="ghost" size="sm" onClick={() => window.location.href = '/login'}>Sign In</Button>
             <Button className="btn-ai-primary" onClick={() => window.location.href = '/app/dashboard'}>
               Get Started <ArrowRight className="w-4 h-4 ml-2" />
